@@ -7,10 +7,14 @@ const rl = readline.createInterface({
 
 let i=0
 let rodadas = 0
-let numero = Math.floor(Math.random() * 11)
+let numero = Math.floor(Math.random() * 201)
+while(numero < 100){
+    numero = Math.floor(Math.random() * 201)
+}
+
 console.log(numero)
 
-rl.setPrompt('Digite um numero entre 0 e 10: ')
+rl.setPrompt('Digite um numero entre 100 e 200: ')
 rl.prompt()
 
 
